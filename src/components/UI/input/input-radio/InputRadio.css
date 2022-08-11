@@ -1,0 +1,22 @@
+.radio-input-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px; }
+  .radio-input-div input[type=radio] {
+    display: none; }
+  .radio-input-div input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 18px;
+    height: 18px;
+    margin: auto 12px auto 0;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1.6px;
+    border-color: #00BDD3; }
+  .radio-input-div input[type="radio"]:checked + *::before {
+    background: radial-gradient(#00BDD3 0%, #00BDD3 40%, transparent 30%, transparent);
+    border-color: #00BDD3; }
+
+/*# sourceMappingURL=InputRadio.css.map */

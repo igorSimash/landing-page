@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACN,MAAM,EAAE,iBAAiB;EACzB,mBAAmB,EAAE,WAAW;EAChC,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,uBAAuB;;AAGpC,eAOC;EANC,IAAK;IACH,SAAS,EAAE,YAAY;EAEzB,EAAG;IACD,SAAS,EAAE,cAAc",
+"sources": ["Loader.scss"],
+"names": [],
+"file": "Loader.css"
+}

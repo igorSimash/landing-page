@@ -1,0 +1,49 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0 20px;
+  border-radius: 10px; }
+  .card .user-info {
+    margin: 20px;
+    overflow-x: hidden; }
+  .card img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 20px 0; }
+  .card .user-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%; }
+    .card .user-bio .name-div {
+      height: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .card .user-bio .name-div .user-name {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap; }
+    .card .user-bio .user-contacts {
+      margin: 20px 20px 0;
+      text-align: center;
+      line-height: 26px;
+      width: 100%; }
+      .card .user-bio .user-contacts div {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .card .user-bio .user-contacts div .contact {
+          max-width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+
+/*# sourceMappingURL=UserCardStyles.css.map */

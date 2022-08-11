@@ -1,0 +1,41 @@
+.section-2 {
+  font-family: Nunito, serif; }
+  .section-2 .user-cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 370px);
+    grid-gap: 29px;
+    word-wrap: break-word;
+    margin-top: 50px; }
+  .section-2 .btn {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 140px 0; }
+  .section-2 .btn.hidden {
+    visibility: hidden; }
+  .section-2 .loader-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; }
+
+@media (max-width: 1200px) {
+  .section-2 .user-cards {
+    grid-template-columns: repeat(3, 282px); } }
+@media (max-width: 920px) {
+  .section-2 .user-cards {
+    grid-template-columns: repeat(2, 344px);
+    grid-gap: 16px; } }
+@media (max-width: 720px) {
+  .section-2 .user-cards {
+    grid-template-columns: repeat(2, 282px);
+    grid-gap: 16px; } }
+@media (max-width: 590px) {
+  .section-2 .user-cards {
+    grid-template-columns: repeat(2, 250px);
+    grid-gap: 16px; } }
+@media (max-width: 560px) {
+  .section-2 .user-cards {
+    grid-template-columns: repeat(1, 328px);
+    grid-gap: 20px; } }
+
+/*# sourceMappingURL=Section2Styles.css.map */

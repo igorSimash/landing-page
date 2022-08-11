@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,YAAa;EACX,MAAM,EAAE,MAAM;EAEhB,yBAA0B;IAEtB,gCAAS;MACP,KAAK,EAAE,KAAK;MACZ,0CAAU;QACR,KAAK,EAAE,KAAK",
+"sources": ["Section3Styles.scss"],
+"names": [],
+"file": "Section3Styles.css"
+}
