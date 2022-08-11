@@ -16,7 +16,7 @@ const Section3 = ({setUserAdded, userAdded}) => {
                         <RegistrationForm setUserAdded={setUserAdded}/>
                     </div>
                     :
-                    <div>
+                    <div className={'success-container'}>
                         <Heading>User successfully registered</Heading>
                         <img src={Success} alt="" className={'success-img'}/>
                     </div>

@@ -1,9 +1,14 @@
-.success-img {
-  margin: 50px 0; }
-  @media (max-width: 430px) {
-    .success-img .section-3 .content {
-      width: 328px; }
-      .success-img .section-3 .content .heading1 {
-        width: 328px; } }
+.success-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .success-container .success-img {
+    margin: 50px 0; }
+
+@media (max-width: 430px) {
+  .section-3 .content {
+    width: 328px; }
+    .section-3 .content .heading1 {
+      width: 328px; } }
 
 /*# sourceMappingURL=Section3Styles.css.map */

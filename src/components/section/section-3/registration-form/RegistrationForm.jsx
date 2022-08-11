@@ -10,6 +10,7 @@ import {FormingData} from "../../../../utils/FormData";
 const RegistrationForm = ({setUserAdded}) => {
     const [positions, setPositions] = useState([])
     const [photoName, setPhotoName] = useState('Upload your photo')
+    const [isError, setError] = useState(false)
     useEffect(() => {
         UsersService.getPositions()
             .then(res => setPositions(res.positions))
@@ -21,6 +22,7 @@ const RegistrationForm = ({setUserAdded}) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        setError(false)
         const pos_id = e.target.form[3].checked ? 1 : e.target.form[4].checked ? 2 : e.target.form[5].checked ? 3 : 4
         const token =  await UsersService.getToken()
         const formData = FormingData(pos_id, e.target.form[0].value, e.target.form[1].value, e.target.form[2].value)
@@ -31,6 +33,7 @@ const RegistrationForm = ({setUserAdded}) => {
                 headers: {'Token': token,}
             })
             .then(setUserAdded)
+            .catch(() => setError(true))
     }
 
     return (
@@ -62,6 +65,9 @@ const RegistrationForm = ({setUserAdded}) => {
             </div>
             <div className={'submit'}>
                 <InputSubmit onClick={handleSubmit} value={'Sign up'}/>
+            </div>
+            <div className="error">
+                {isError && <span>An error occurred. Check the data</span>}
             </div>
         </form>
     );
